@@ -4,216 +4,200 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Preise & Öffnungszeiten | Padel Eckernförde</title>
-  <meta name="description" content="Preise für Padel in Eckernförde: Platzmiete, Schlägerverleih, Abos und Öffnungszeiten auf einen Blick.">
+  <meta name="description" content="Was Padel in Eckernförde kostet: Court-Miete, Schlägerverleih, Karten, Abos und Öffnungszeiten.">
+  <meta name="theme-color" content="#1f4e9a">
   <link rel="canonical" href="https://www.example.com/preise.html"><!-- [PLATZHALTER: echte Domain] -->
 
-  <!-- Open Graph (Vorschau beim Teilen in Social Media / Messengern) -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
   <meta property="og:title" content="Preise & Öffnungszeiten | Padel Eckernförde">
-  <meta property="og:description" content="Preise für Padel in Eckernförde: Platzmiete, Schlägerverleih, Abos und Öffnungszeiten auf einen Blick.">
+  <meta property="og:description" content="Was Padel in Eckernförde kostet: Court-Miete, Schlägerverleih, Karten, Abos und Öffnungszeiten.">
   <meta property="og:url" content="https://www.example.com/preise.html">
   <meta property="og:image" content="https://www.example.com/assets/img/og-image.jpg"><!-- [PLATZHALTER: Teilen-Bild 1200x630] -->
 
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 
-  <!-- Schriften: Outfit (Überschriften) + Inter (Fließtext). Hinweis DSGVO: vor Livegang lokal hosten. -->
+  <!-- Schriften: Big Shoulders Display (Überschriften) + Atkinson Hyperlegible Next (Text).
+       DSGVO: vor Livegang lokal hosten (siehe DESIGN.md). -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&amp;family=Big+Shoulders+Display:wght@800;900&amp;display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+  <a class="skip" href="#inhalt">Zum Inhalt springen</a>
 
-  <!-- ================= HEADER (auf allen Seiten identisch) ================= -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html" aria-label="Startseite – [PLATZHALTER: Unternehmensname]">
-        <span class="logo-mark" aria-hidden="true">LOGO</span>
-        <span>[PLATZHALTER: Name]<small>Padel · Eckernförde</small></span>
+  <!-- ===== HEADER (auf allen Seiten identisch) ===== -->
+  <header class="header">
+    <div class="wrap header__in">
+      <a class="brand" href="index.html">
+        <!-- Logo-Platzhalter: Mark + Name ersetzen, sobald ein Logo existiert -->
+        <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="3" y="7" width="34" height="26" rx="6" fill="#1f4e9a"/><path d="M20 5v30M9 20h22" stroke="#fff" stroke-width="1.6"/><circle cx="28" cy="13" r="5" fill="#d3f23a" stroke="#0a1f3c" stroke-width="1.5"/></svg>
+        <span class="brand__name">[PLATZHALTER: Name]<small>Padel in Eckernförde</small></span>
       </a>
-
-      <nav id="main-nav" class="main-nav" aria-label="Hauptnavigation">
+      <nav id="nav" class="nav" aria-label="Hauptnavigation">
         <ul>
-          <li><a href="index.html">Start</a></li>
-          <li><a href="padel.html">Padel</a></li>
-          <li><a href="platz.html">Der Platz</a></li>
-          <li><a href="preise.html" aria-current="page">Preise</a></li>
-          <li><a href="angebote.html">Angebote & Events</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="padel.html">Padel?</a></li>
+            <li><a href="platz.html">Der Platz</a></li>
+            <li><a href="preise.html" aria-current="page">Preise</a></li>
+            <li><a href="angebote.html">Gruppen & Events</a></li>
+            <li><a href="faq.html">Fragen</a></li>
+            <li><a href="kontakt.html">Anfahrt</a></li>
         </ul>
       </nav>
-
-      <div class="header-actions">
-        <a class="btn btn--book btn--sm header-cta" href="buchen.html">Jetzt Platz buchen</a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menü öffnen">
-          <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      <div class="header__right">
+        <a class="btn btn--book btn--small header__cta" href="buchen.html">Platz buchen</a>
+        <button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menü öffnen">
+          <svg class="bars" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+          <svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
         </button>
       </div>
     </div>
   </header>
 
   <main id="inhalt">
-    <!-- Seitenkopf -->
-    <section class="page-hero">
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Brotkrumen">
-          <ol>
-            <li><a href="index.html">Start</a></li>
-            <li><span aria-current="page">Preise</span></li>
-          </ol>
-        </nav>
-        <span class="eyebrow">Preise & Öffnungszeiten</span>
-        <h1>Preise &amp; Öffnungszeiten</h1>
-        <p class="lead">Transparent und unkompliziert: Du zahlst pro Platz und Spielzeit. Geteilt durch vier wird Padel schnell zum günstigen Gruppenerlebnis.</p>
-        <div class="btn-row">
-          <a class="btn btn--book" href="buchen.html">Jetzt Platz buchen</a>
+    <!-- Seitenkopf: Titel im „Court“-Rahmen -->
+    <header class="pagehead">
+      <div class="wrap">
+        <div class="pagehead__frame">
+          <span class="pagehead__ball" aria-hidden="true"></span>
+          <nav class="crumbs" aria-label="Brotkrumen"><ol><li><a href="index.html">Start</a></li><li><span aria-current="page">Preise</span></li></ol></nav>
+          <h1>Preise &amp; Zeiten.</h1>
+          <p class="lead">Ihr bezahlt den Court, nicht die Köpfe. Vier Leute teilen sich eine Stunde.</p>
+          <div class="actions"><a class="btn btn--book" href="buchen.html">Platz buchen</a></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="band band--court" aria-labelledby="court-price">
+      <div class="wrap two two--even">
+        <div>
+          <h2 id="court-price">Court mieten.</h2>
+          <p style="color:var(--on-court-soft)"><span class="ph">[PLATZHALTER: Hinweis: inkl. MwSt.? Licht inklusive?]</span></p>
+        </div>
+        <div class="tickets">
+          <div class="ticket">
+              <div class="ticket__main">
+                <p class="ticket__label">1 Court, bis 4 Personen</p>
+                <h3>Nebenzeit</h3>
+                <p style="margin:0"><span class="ph">[PLATZHALTER: z. B. Mo–Fr bis 16 Uhr]</span></p>
+              </div>
+              <div class="ticket__stub">
+                <p class="ticket__price"><span class="ph">[PLATZHALTER: €]</span></p>
+                <p class="ticket__per">pro Court</p>
+                <a class="btn btn--book btn--small" href="buchen.html">Buchen</a>
+              </div>
+            </div>
+          <div class="ticket">
+              <div class="ticket__main">
+                <p class="ticket__label">1 Court, bis 4 Personen</p>
+                <h3>Hauptzeit</h3>
+                <p style="margin:0"><span class="ph">[PLATZHALTER: z. B. abends &amp; Wochenende]</span></p>
+              </div>
+              <div class="ticket__stub">
+                <p class="ticket__price"><span class="ph">[PLATZHALTER: €]</span></p>
+                <p class="ticket__per">pro Court</p>
+                <a class="btn btn--book btn--small" href="buchen.html">Buchen</a>
+              </div>
+            </div>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="tarife-title">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2 id="tarife-title">Platzmiete</h2>
-          <p class="lead">Preise gelten pro Platz (bis zu 4 Personen). <span class="ph-text">[PLATZHALTER: Hinweis, ob inkl. MwSt. / Licht]</span></p>
+    <section class="band band--loud" aria-labelledby="extras-title">
+      <div class="wrap two">
+        <div class="sticky-col">
+          <h2 id="extras-title">Alles andere.</h2>
+          <p style="color:var(--text-soft)">Leihen, Karten, Abos, Gutscheine.</p>
         </div>
-        <div class="grid grid--3">
-          <article class="card price-card reveal">
-            <h3>Nebenzeit</h3>
-            <p class="price"><span class="ph-text">[PLATZHALTER: Preis]</span> <small style="font-size:1rem;font-weight:500">/ 60 Min.</small></p>
-            <p><span class="ph-text">[PLATZHALTER: Zeitfenster, z. B. Mo–Fr vormittags]</span></p>
-            <a class="btn btn--book btn--sm" href="buchen.html">Buchen</a>
-          </article>
-          <article class="card price-card price-card--featured reveal">
-            <span class="badge">Beliebt</span>
-            <h3>Hauptzeit</h3>
-            <p class="price"><span class="ph-text">[PLATZHALTER: Preis]</span> <small style="font-size:1rem;font-weight:500">/ 60 Min.</small></p>
-            <p><span class="ph-text">[PLATZHALTER: Zeitfenster, z. B. abends & Wochenende]</span></p>
-            <a class="btn btn--book btn--sm" href="buchen.html">Buchen</a>
-          </article>
-          <article class="card price-card reveal">
-            <h3><span class="ph-text">[PLATZHALTER: Weitere Option, z. B. 90 Min.]</span></h3>
-            <p class="price"><span class="ph-text">[PLATZHALTER: Preis]</span></p>
-            <p><span class="ph-text">[PLATZHALTER: Beschreibung]</span></p>
-            <a class="btn btn--book btn--sm" href="buchen.html">Buchen</a>
-          </article>
-        </div>
+        <ul class="menu">
+          <li><span class="what">Schläger leihen<small><span class="ph">[PLATZHALTER: pro Schläger und Spiel]</span></small></span><span class="dots"></span><span class="price"><span class="ph">[PLATZHALTER: €]</span></span></li>
+          <li><span class="what">Bälle<small><span class="ph">[PLATZHALTER: leihen oder kaufen]</span></small></span><span class="dots"></span><span class="price"><span class="ph">[PLATZHALTER: €]</span></span></li>
+          <li><span class="what">90 Minuten<small><span class="ph">[PLATZHALTER: falls angeboten]</span></small></span><span class="dots"></span><span class="price"><span class="ph">[PLATZHALTER: €]</span></span></li>
+          <li><span class="what">Zehnerkarte<small><span class="ph">[PLATZHALTER: Bedingungen]</span></small></span><span class="dots"></span><span class="price"><span class="ph">[PLATZHALTER: €]</span></span></li>
+          <li><span class="what">Mitgliedschaft / Abo<small><span class="ph">[PLATZHALTER: Leistungen, Laufzeit]</span></small></span><span class="dots"></span><span class="price"><span class="ph">[PLATZHALTER: € / Monat]</span></span></li>
+          <li><span class="what">Gutschein<small><span class="ph">[PLATZHALTER: Wert frei wählbar?]</span></small></span><span class="dots"></span><span class="price"><span class="ph">[PLATZHALTER: €]</span></span></li>
+        </ul>
       </div>
     </section>
 
-    <section class="section section--sand" aria-labelledby="extras-title">
-      <div class="container">
-        <div class="section-head reveal"><h2 id="extras-title">Extras, Abos &amp; Mitgliedschaften</h2></div>
-        <div class="table-wrap reveal">
-          <table>
-            <caption class="visually-hidden">Zusatzleistungen und Abos</caption>
-            <thead><tr><th scope="col">Leistung</th><th scope="col">Details</th><th scope="col">Preis</th></tr></thead>
-            <tbody>
-              <tr><th scope="row">Schlägerverleih</th><td><span class="ph-text">[PLATZHALTER: pro Schläger / pro Spiel]</span></td><td><span class="ph-text">[PLATZHALTER: Preis]</span></td></tr>
-              <tr><th scope="row">Bälle</th><td><span class="ph-text">[PLATZHALTER: Leihen oder kaufen?]</span></td><td><span class="ph-text">[PLATZHALTER: Preis]</span></td></tr>
-              <tr><th scope="row">Zehnerkarte</th><td><span class="ph-text">[PLATZHALTER: Bedingungen]</span></td><td><span class="ph-text">[PLATZHALTER: Preis]</span></td></tr>
-              <tr><th scope="row">Mitgliedschaft / Abo</th><td><span class="ph-text">[PLATZHALTER: Leistungen, Laufzeit]</span></td><td><span class="ph-text">[PLATZHALTER: Preis / Monat]</span></td></tr>
-              <tr><th scope="row">Gutschein</th><td><span class="ph-text">[PLATZHALTER: Wert frei wählbar?]</span></td><td><span class="ph-text">[PLATZHALTER: Preis]</span></td></tr>
-            </tbody>
-          </table>
+    <section class="band band--paper2" id="zeiten" aria-labelledby="hours-title">
+      <div class="wrap two two--even">
+        <div>
+          <h2 id="hours-title">Wann offen ist.</h2>
+          <p style="color:var(--text-soft)">Was gerade frei ist, zeigt der Buchungskalender.</p>
+          <div class="actions"><a class="btn btn--book" href="buchen.html">Freie Zeiten ansehen</a></div>
         </div>
+        <table class="tide tide--light">
+          <caption class="vh">Öffnungszeiten</caption>
+          <tbody>
+            <tr><th scope="row">Montag bis Freitag</th><td><span class="ph">[PLATZHALTER: von–bis]</span></td></tr>
+            <tr><th scope="row">Samstag</th><td><span class="ph">[PLATZHALTER: von–bis]</span></td></tr>
+            <tr><th scope="row">Sonntag &amp; Feiertage</th><td><span class="ph">[PLATZHALTER: von–bis]</span></td></tr>
+            <tr><th scope="row">Saison</th><td><span class="ph">[PLATZHALTER: ganzjährig / Winterpause]</span></td></tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
-    <section class="section" id="zeiten" aria-labelledby="zeiten-title">
-      <div class="container split">
-        <div class="reveal">
-          <h2 id="zeiten-title">Öffnungszeiten</h2>
-          <div class="table-wrap">
-            <table>
-              <caption class="visually-hidden">Öffnungszeiten</caption>
-              <thead><tr><th scope="col">Tag</th><th scope="col">Zeit</th></tr></thead>
-              <tbody>
-                <tr><th scope="row">Montag – Freitag</th><td><span class="ph-text">[PLATZHALTER: von – bis]</span></td></tr>
-                <tr><th scope="row">Samstag</th><td><span class="ph-text">[PLATZHALTER: von – bis]</span></td></tr>
-                <tr><th scope="row">Sonntag &amp; Feiertage</th><td><span class="ph-text">[PLATZHALTER: von – bis]</span></td></tr>
-              </tbody>
-            </table>
-          </div>
-          <p style="margin-top:1rem"><span class="ph-text">[PLATZHALTER: Hinweis zu Saison / Winterpause / Sonderöffnungszeiten]</span></p>
-        </div>
-        <div class="reveal">
-          <div class="notice">
-            <strong>Spontan spielen?</strong><br>
-            Im Buchungskalender siehst du jederzeit, welche Plätze gerade frei sind.
-          </div>
-          <a class="btn btn--book" href="buchen.html">Freie Plätze ansehen</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= ABSCHLUSS-CTA ================= -->
-    <section class="cta-band" aria-labelledby="cta-title">
-      <div class="container reveal">
-        <h2 id="cta-title">Jetzt Platz sichern</h2>
-        <p><span class="tag-muster">[MUSTERTEXT]</span>Schnapp dir drei Freunde, such dir einen Termin aus und probier Padel aus. Die Buchung dauert nur wenige Minuten.</p>
-        <div class="btn-row">
-          <a class="btn btn--book" href="buchen.html">Jetzt Platz buchen</a>
-          <a class="btn btn--outline" href="kontakt.html">Fragen? Kontakt</a>
+    <!-- ===== ABSCHLUSS ===== -->
+    <section class="closer" aria-labelledby="closer-title">
+      <div class="closer__lines" aria-hidden="true"></div>
+      <div class="wrap">
+        <h2 id="closer-title">Wer bringt die Bälle mit?</h2>
+        <p><span class="muster">MUSTERTEXT</span>Sucht euch einen Termin aus, sagt den anderen drei Bescheid – den Rest klärt ihr auf dem Court.</p>
+        <div class="actions">
+          <a class="btn btn--book" href="buchen.html">Platz buchen</a>
+          <a class="btn btn--line" href="kontakt.html">Erst mal anrufen</a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ================= FOOTER (auf allen Seiten identisch) ================= -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a class="logo" href="index.html">
-            <span class="logo-mark" aria-hidden="true">LOGO</span>
-            <span>[PLATZHALTER: Name]<small>Padel · Eckernförde</small></span>
-          </a>
-          <p style="margin-top:1rem">Padel an der Eckernförder Bucht – für Einsteiger, Freizeitgruppen und alle, die Lust auf Bewegung haben.</p>
-        </div>
-        <div>
-          <h2>Seiten</h2>
+  <!-- ===== FOOTER (auf allen Seiten identisch) ===== -->
+  <footer class="footer">
+    <div class="wrap">
+      <p class="footer__big">Bis gleich auf dem Platz.</p>
+      <div class="footer__row">
+        <address>
+          <strong style="color:#fff">[PLATZHALTER: Unternehmensname]</strong><br>
+          [PLATZHALTER: Straße Nr.]<br>
+          [PLATZHALTER: PLZ] Eckernförde<br>
+          <a href="tel:+490000000000">[PLATZHALTER: Telefon]</a><br>
+          <a href="mailto:info@example.com">[PLATZHALTER: E-Mail]</a>
+        </address>
+        <nav aria-label="Footer">
           <ul>
             <li><a href="padel.html">Was ist Padel?</a></li>
             <li><a href="platz.html">Der Platz</a></li>
-            <li><a href="preise.html">Preise &amp; Öffnungszeiten</a></li>
-            <li><a href="angebote.html">Angebote &amp; Events</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-          </ul>
-        </div>
-        <div>
-          <h2>Kontakt</h2>
-          <ul>
-            <li>[PLATZHALTER: Straße Nr.]</li>
-            <li>[PLATZHALTER: PLZ] Eckernförde</li>
-            <li><a href="tel:+490000000000">[PLATZHALTER: Telefon]</a></li>
-            <li><a href="mailto:info@example.com">[PLATZHALTER: E-Mail]</a></li>
-          </ul>
-        </div>
-        <div>
-          <h2>Buchen</h2>
-          <ul>
-            <li><a href="buchen.html">Platz online buchen</a></li>
-            <li><a href="angebote.html#gruppen">Gruppen- &amp; Firmenanfrage</a></li>
+            <li><a href="preise.html">Preise &amp; Zeiten</a></li>
+            <li><a href="angebote.html">Gruppen &amp; Events</a></li>
+            <li><a href="faq.html">Fragen</a></li>
             <li><a href="kontakt.html">Anfahrt</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p style="margin-bottom:.8rem">Freie Zeiten, Schläger, Gruppen: alles über die Buchung.</p>
+          <a class="btn btn--book btn--small" href="buchen.html">Platz buchen</a>
+          <ul style="margin-top:1rem">
+            <li><a href="#">Instagram [PLATZHALTER]</a></li>
+            <li><a href="#">Facebook [PLATZHALTER]</a></li>
           </ul>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="footer__legal">
         <span>© <span data-year>2026</span> [PLATZHALTER: Unternehmensname]</span>
-        <span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
+        <span><a href="impressum.html">Impressum</a> &nbsp; <a href="datenschutz.html">Datenschutz</a></span>
       </div>
     </div>
   </footer>
 
-  <!-- Fixierte Buchungsleiste (nur Smartphone) -->
-  <div class="mobile-book-bar">
-    <a class="btn btn--book" href="buchen.html">Jetzt Platz buchen</a>
+  <!-- Buchungsleiste fürs Smartphone -->
+  <div class="bookbar">
+    <a class="btn btn--book" href="buchen.html">Platz buchen</a>
+    <a class="call" href="tel:+490000000000" aria-label="Anrufen ([PLATZHALTER: Telefon])"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></a>
   </div>
 
   <script src="js/main.js" defer></script>

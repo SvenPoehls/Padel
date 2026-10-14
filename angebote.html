@@ -3,242 +3,215 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Angebote & Events: Schnuppern, Firmenevents, Turniere | Padel Eckernförde</title>
-  <meta name="description" content="Padel in Eckernförde für Einsteiger und Gruppen: Schlägerverleih, Schnupperangebote, Firmen- und Geburtstagsevents sowie Turniere.">
+  <title>Gruppen, Firmenevents, Geburtstage & Turniere | Padel Eckernförde</title>
+  <meta name="description" content="Padel in Eckernförde für Gruppen: Schnuppern, Firmen- und Teamevents, Geburtstage und Turniere.">
+  <meta name="theme-color" content="#1f4e9a">
   <link rel="canonical" href="https://www.example.com/angebote.html"><!-- [PLATZHALTER: echte Domain] -->
 
-  <!-- Open Graph (Vorschau beim Teilen in Social Media / Messengern) -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
-  <meta property="og:title" content="Angebote & Events: Schnuppern, Firmenevents, Turniere | Padel Eckernförde">
-  <meta property="og:description" content="Padel in Eckernförde für Einsteiger und Gruppen: Schlägerverleih, Schnupperangebote, Firmen- und Geburtstagsevents sowie Turniere.">
+  <meta property="og:title" content="Gruppen, Firmenevents, Geburtstage & Turniere | Padel Eckernförde">
+  <meta property="og:description" content="Padel in Eckernförde für Gruppen: Schnuppern, Firmen- und Teamevents, Geburtstage und Turniere.">
   <meta property="og:url" content="https://www.example.com/angebote.html">
   <meta property="og:image" content="https://www.example.com/assets/img/og-image.jpg"><!-- [PLATZHALTER: Teilen-Bild 1200x630] -->
 
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 
-  <!-- Schriften: Outfit (Überschriften) + Inter (Fließtext). Hinweis DSGVO: vor Livegang lokal hosten. -->
+  <!-- Schriften: Big Shoulders Display (Überschriften) + Atkinson Hyperlegible Next (Text).
+       DSGVO: vor Livegang lokal hosten (siehe DESIGN.md). -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&amp;family=Big+Shoulders+Display:wght@800;900&amp;display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+  <a class="skip" href="#inhalt">Zum Inhalt springen</a>
 
-  <!-- ================= HEADER (auf allen Seiten identisch) ================= -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html" aria-label="Startseite – [PLATZHALTER: Unternehmensname]">
-        <span class="logo-mark" aria-hidden="true">LOGO</span>
-        <span>[PLATZHALTER: Name]<small>Padel · Eckernförde</small></span>
+  <!-- ===== HEADER (auf allen Seiten identisch) ===== -->
+  <header class="header">
+    <div class="wrap header__in">
+      <a class="brand" href="index.html">
+        <!-- Logo-Platzhalter: Mark + Name ersetzen, sobald ein Logo existiert -->
+        <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="3" y="7" width="34" height="26" rx="6" fill="#1f4e9a"/><path d="M20 5v30M9 20h22" stroke="#fff" stroke-width="1.6"/><circle cx="28" cy="13" r="5" fill="#d3f23a" stroke="#0a1f3c" stroke-width="1.5"/></svg>
+        <span class="brand__name">[PLATZHALTER: Name]<small>Padel in Eckernförde</small></span>
       </a>
-
-      <nav id="main-nav" class="main-nav" aria-label="Hauptnavigation">
+      <nav id="nav" class="nav" aria-label="Hauptnavigation">
         <ul>
-          <li><a href="index.html">Start</a></li>
-          <li><a href="padel.html">Padel</a></li>
-          <li><a href="platz.html">Der Platz</a></li>
-          <li><a href="preise.html">Preise</a></li>
-          <li><a href="angebote.html" aria-current="page">Angebote & Events</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="padel.html">Padel?</a></li>
+            <li><a href="platz.html">Der Platz</a></li>
+            <li><a href="preise.html">Preise</a></li>
+            <li><a href="angebote.html" aria-current="page">Gruppen & Events</a></li>
+            <li><a href="faq.html">Fragen</a></li>
+            <li><a href="kontakt.html">Anfahrt</a></li>
         </ul>
       </nav>
-
-      <div class="header-actions">
-        <a class="btn btn--book btn--sm header-cta" href="buchen.html">Jetzt Platz buchen</a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menü öffnen">
-          <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      <div class="header__right">
+        <a class="btn btn--book btn--small header__cta" href="buchen.html">Platz buchen</a>
+        <button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menü öffnen">
+          <svg class="bars" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+          <svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
         </button>
       </div>
     </div>
   </header>
 
   <main id="inhalt">
-    <!-- Seitenkopf -->
-    <section class="page-hero">
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Brotkrumen">
-          <ol>
-            <li><a href="index.html">Start</a></li>
-            <li><span aria-current="page">Angebote & Events</span></li>
-          </ol>
-        </nav>
-        <span class="eyebrow">Für Einsteiger & Gruppen</span>
-        <h1>Angebote &amp; Events</h1>
-        <p class="lead"><span class="tag-muster">[MUSTERTEXT]</span>Vom ersten Ausprobieren bis zum eigenen Turnier: Hier findest du alles rund um Einstieg, Gruppen und Veranstaltungen.</p>
-        <div class="btn-row">
-          <a class="btn btn--book" href="buchen.html">Jetzt Platz buchen</a>
+    <!-- Seitenkopf: Titel im „Court“-Rahmen -->
+    <header class="pagehead">
+      <div class="wrap">
+        <div class="pagehead__frame">
+          <span class="pagehead__ball" aria-hidden="true"></span>
+          <nav class="crumbs" aria-label="Brotkrumen"><ol><li><a href="index.html">Start</a></li><li><span aria-current="page">Gruppen & Events</span></li></ol></nav>
+          <h1>Gruppen &amp; Events.</h1>
+          <p class="lead"><span class="muster">MUSTERTEXT</span>Erstes Ausprobieren, Teamtag, Geburtstag oder Turnier: Sagt uns, was ihr vorhabt.</p>
+          <div class="actions"><a class="btn btn--book" href="buchen.html">Platz buchen</a></div>
         </div>
       </div>
-    </section>
+    </header>
 
-    <section class="section" id="einsteiger" aria-labelledby="einsteiger-title">
-      <div class="container split">
-        <div class="reveal">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="10" cy="9" rx="6.5" ry="7"/><path d="M14.5 14l5.5 6.5M9 6.5h.01M12 9h.01M8 11h.01"/></svg></div>
-          <span class="eyebrow">Einsteiger</span>
-          <h2 id="einsteiger-title">Schnuppern &amp; Schlägerverleih</h2>
-          <p><span class="tag-muster">[MUSTERTEXT]</span>Du hast noch nie Padel gespielt? Kein Problem. Mit Leihschläger und ein paar Tipps zum Start bist du schnell im Spiel.</p>
-          <ul class="checklist">
-            <li><span class="ph-text">[PLATZHALTER: Schnupperangebot: Dauer, Preis, Ablauf]</span></li>
-            <li><span class="ph-text">[PLATZHALTER: Einsteigerkurs / Trainerstunde]</span></li>
-            <li><span class="ph-text">[PLATZHALTER: Schlägerverleih: Preis, Anzahl]</span></li>
-          </ul>
-          <div class="btn-row">
+    <section class="band band--loud " id="einsteiger" aria-labelledby="einsteiger-t">
+      <div class="wrap two two--flip" style="align-items:center">
+        <div>
+          <h2 id="einsteiger-t">Zum ersten Mal hier.</h2>
+          <p><span class="muster">MUSTERTEXT</span>Ihr braucht nichts außer Sportschuhen. Schläger gibt’s vor Ort, ein paar Tipps zum Start auch.</p>
+          <dl class="spec" style="margin-top:var(--s3)">
+            <div><dt>Schnuppern</dt><dd><span class="ph">[PLATZHALTER: Angebot, Dauer, Preis]</span></dd></div>
+            <div><dt>Mit Trainer:in</dt><dd><span class="ph">[PLATZHALTER: Einsteigerstunde / Kurs]</span></dd></div>
+            <div><dt>Schläger</dt><dd><span class="ph">[PLATZHALTER: Verleih, Preis]</span></dd></div>
+          </dl>
+          <div class="actions">
             <a class="btn btn--book" href="buchen.html">Platz buchen</a>
-            <a class="btn btn--outline" href="kontakt.html">Fragen zum Einstieg</a>
+            <a class="btn btn--line" href="kontakt.html">Fragen zum Einstieg</a>
           </div>
         </div>
-        <div class="reveal"><div class="ph-img ph-img--tall" role="img" aria-label="Bildplatzhalter: Foto: Einsteiger-Gruppe mit Trainer:in">[PLATZHALTER: Foto: Einsteiger-Gruppe mit Trainer:in]</div></div>
+        <div class="photo photo--tall" role="img" aria-label="Fotoplatzhalter: Einsteigergruppe mit Trainer:in"><span>[PLATZHALTER: Foto – Einsteigergruppe mit Trainer:in]</span></div>
       </div>
     </section>
-    <section class="section section--sand" id="gruppen" aria-labelledby="gruppen-title">
-      <div class="container split">
-        <div class="reveal"><div class="ph-img ph-img--tall" role="img" aria-label="Bildplatzhalter: Foto: Firmenteam beim Padel-Event">[PLATZHALTER: Foto: Firmenteam beim Padel-Event]</div></div>
-        <div class="reveal">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 12.5h18"/></svg></div>
-          <span class="eyebrow">Firmen &amp; Gruppen</span>
-          <h2 id="gruppen-title">Teamevents &amp; Gruppenbuchungen</h2>
-          <p><span class="tag-muster">[MUSTERTEXT]</span>Padel bringt Kolleginnen, Kollegen und Freundeskreise zusammen – unkompliziert, sportlich und mit viel Spaß. Wir stellen euch auf Wunsch ein passendes Paket zusammen.</p>
-          <ul class="checklist">
-            <li><span class="ph-text">[PLATZHALTER: Paket für Firmen / Teams: Inhalte]</span></li>
-            <li><span class="ph-text">[PLATZHALTER: Mögliche Gruppengröße]</span></li>
-            <li><span class="ph-text">[PLATZHALTER: Verpflegung / Catering optional]</span></li>
-            <li><span class="ph-text">[PLATZHALTER: Preis auf Anfrage oder Pauschale]</span></li>
-          </ul>
-          <div class="btn-row">
+    <section class="band band--loud band--paper2" id="gruppen" aria-labelledby="gruppen-t">
+      <div class="wrap two " style="align-items:center">
+        <div class="photo photo--tall" role="img" aria-label="Fotoplatzhalter: Firmenteam beim Event"><span>[PLATZHALTER: Foto – Firmenteam beim Event]</span></div>
+        <div>
+          <h2 id="gruppen-t">Mit dem Team.</h2>
+          <p><span class="muster">MUSTERTEXT</span>Ein paar Stunden Padel statt Konferenzraum. Wir stellen euch Courts, Ablauf und auf Wunsch Verpflegung zusammen.</p>
+          <dl class="spec" style="margin-top:var(--s3)">
+            <div><dt>Paket</dt><dd><span class="ph">[PLATZHALTER: Inhalte]</span></dd></div>
+            <div><dt>Größe</dt><dd><span class="ph">[PLATZHALTER: min./max. Personen]</span></dd></div>
+            <div><dt>Essen</dt><dd><span class="ph">[PLATZHALTER: Catering optional?]</span></dd></div>
+            <div><dt>Preis</dt><dd><span class="ph">[PLATZHALTER: Pauschale oder auf Anfrage]</span></dd></div>
+          </dl>
+          <div class="actions">
             <a class="btn btn--book" href="buchen.html">Platz buchen</a>
-            <a class="btn btn--outline" href="kontakt.html">Gruppenanfrage stellen</a>
+            <a class="btn btn--line" href="kontakt.html">Gruppe anfragen</a>
           </div>
         </div>
       </div>
     </section>
-    <section class="section" id="geburtstag" aria-labelledby="geburtstag-title">
-      <div class="container split">
-        <div class="reveal">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="18" height="12" rx="1.5"/><path d="M3 13h18M12 9v12M12 9S10.5 4 8 4.5 7 9 12 9zM12 9s1.5-5 4-4.5S17 9 12 9z"/></svg></div>
-          <span class="eyebrow">Feiern</span>
-          <h2 id="geburtstag-title">Geburtstage &amp; private Events</h2>
-          <p><span class="tag-muster">[MUSTERTEXT]</span>Ob runder Geburtstag, Junggesellenabschied oder Kindergeburtstag: Feiert euren Anlass mal auf dem Padel-Court.</p>
-          <ul class="checklist">
-            <li><span class="ph-text">[PLATZHALTER: Geburtstagspaket: Inhalte, Dauer]</span></li>
-            <li><span class="ph-text">[PLATZHALTER: Altersgruppen / Kindergeburtstag möglich?]</span></li>
-            <li><span class="ph-text">[PLATZHALTER: Preis]</span></li>
-          </ul>
-          <div class="btn-row">
+    <section class="band band--loud " id="geburtstag" aria-labelledby="geburtstag-t">
+      <div class="wrap two two--flip" style="align-items:center">
+        <div>
+          <h2 id="geburtstag-t">Wenn jemand Geburtstag hat.</h2>
+          <p><span class="muster">MUSTERTEXT</span>Ob 12 oder 50: Feiert auf dem Court und danach <span class="ph">[PLATZHALTER: wo? Terrasse/Bistro]</span>.</p>
+          <dl class="spec" style="margin-top:var(--s3)">
+            <div><dt>Paket</dt><dd><span class="ph">[PLATZHALTER: Inhalt, Dauer]</span></dd></div>
+            <div><dt>Kinder</dt><dd><span class="ph">[PLATZHALTER: ab welchem Alter?]</span></dd></div>
+            <div><dt>Preis</dt><dd><span class="ph">[PLATZHALTER: €]</span></dd></div>
+          </dl>
+          <div class="actions">
             <a class="btn btn--book" href="buchen.html">Platz buchen</a>
-            <a class="btn btn--outline" href="kontakt.html">Feier anfragen</a>
+            <a class="btn btn--line" href="kontakt.html">Feier anfragen</a>
           </div>
         </div>
-        <div class="reveal"><div class="ph-img ph-img--tall" role="img" aria-label="Bildplatzhalter: Foto: Gruppe feiert am Platz">[PLATZHALTER: Foto: Gruppe feiert am Platz]</div></div>
+        <div class="photo photo--tall" role="img" aria-label="Fotoplatzhalter: Gruppe feiert am Court"><span>[PLATZHALTER: Foto – Gruppe feiert am Court]</span></div>
       </div>
     </section>
-    <section class="section section--sand" id="turniere" aria-labelledby="turniere-title">
-      <div class="container split">
-        <div class="reveal"><div class="ph-img ph-img--tall" role="img" aria-label="Bildplatzhalter: Foto: Turnierszene / Siegerehrung">[PLATZHALTER: Foto: Turnierszene / Siegerehrung]</div></div>
-        <div class="reveal">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4h8v5a4 4 0 0 1-8 0V4zM8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8 20h8M9.5 17h5"/></svg></div>
-          <span class="eyebrow">Wettkampf</span>
-          <h2 id="turniere-title">Turniere &amp; Ligen</h2>
-          <p><span class="tag-muster">[MUSTERTEXT]</span>Lust auf ein bisschen Wettkampf? Bei unseren Turnieren treffen sich Spielerinnen und Spieler unterschiedlicher Spielstärken.</p>
-          <ul class="checklist">
-            <li><span class="ph-text">[PLATZHALTER: Turnierformate, z. B. Americano, Mexicano]</span></li>
-            <li><span class="ph-text">[PLATZHALTER: Nächste Termine]</span></li>
-            <li><span class="ph-text">[PLATZHALTER: Anmeldung & Startgebühr]</span></li>
-          </ul>
-          <div class="btn-row">
+    <section class="band band--loud band--paper2" id="turniere" aria-labelledby="turniere-t">
+      <div class="wrap two " style="align-items:center">
+        <div class="photo photo--tall" role="img" aria-label="Fotoplatzhalter: Turnierszene oder Siegerehrung"><span>[PLATZHALTER: Foto – Turnierszene oder Siegerehrung]</span></div>
+        <div>
+          <h2 id="turniere-t">Wenn ihr Punkte zählen wollt.</h2>
+          <p><span class="muster">MUSTERTEXT</span>Bei unseren Turnieren spielt ihr gegen Leute, die ihr noch nicht kennt – mit gemischter Spielstärke.</p>
+          <dl class="spec" style="margin-top:var(--s3)">
+            <div><dt>Format</dt><dd><span class="ph">[PLATZHALTER: z. B. Americano, Mexicano]</span></dd></div>
+            <div><dt>Anmeldung</dt><dd><span class="ph">[PLATZHALTER: wie, bis wann]</span></dd></div>
+            <div><dt>Startgeld</dt><dd><span class="ph">[PLATZHALTER: €]</span></dd></div>
+          </dl>
+          <div class="actions">
             <a class="btn btn--book" href="buchen.html">Platz buchen</a>
-            <a class="btn btn--outline" href="kontakt.html">Zur Turnier-Anmeldung</a>
+            <a class="btn btn--line" href="kontakt.html">Zur Anmeldung</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="termine-title">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2 id="termine-title">Nächste Termine</h2>
-        </div>
-        <div class="table-wrap reveal">
-          <table>
-            <caption class="visually-hidden">Kommende Veranstaltungen</caption>
-            <thead><tr><th scope="col">Datum</th><th scope="col">Veranstaltung</th><th scope="col">Info</th></tr></thead>
-            <tbody>
-              <tr><td><span class="ph-text">[PLATZHALTER: Datum]</span></td><td><span class="ph-text">[PLATZHALTER: Event / Turnier]</span></td><td><span class="ph-text">[PLATZHALTER: Kurzinfo, Anmeldung]</span></td></tr>
-              <tr><td><span class="ph-text">[PLATZHALTER: Datum]</span></td><td><span class="ph-text">[PLATZHALTER: Event / Turnier]</span></td><td><span class="ph-text">[PLATZHALTER: Kurzinfo, Anmeldung]</span></td></tr>
-              <tr><td><span class="ph-text">[PLATZHALTER: Datum]</span></td><td><span class="ph-text">[PLATZHALTER: Event / Turnier]</span></td><td><span class="ph-text">[PLATZHALTER: Kurzinfo, Anmeldung]</span></td></tr>
-            </tbody>
-          </table>
-        </div>
+    <section class="band" aria-labelledby="dates-title">
+      <div class="wrap two">
+        <h2 id="dates-title">Spielplan.</h2>
+        <ul class="fixtures">
+          <li><span class="date"><span class="ph">[PLATZHALTER: Datum]</span></span><span><span class="ph">[PLATZHALTER: Event / Turnier – Kurzinfo, Anmeldung]</span></span></li>
+          <li><span class="date"><span class="ph">[PLATZHALTER: Datum]</span></span><span><span class="ph">[PLATZHALTER: Event / Turnier – Kurzinfo, Anmeldung]</span></span></li>
+          <li><span class="date"><span class="ph">[PLATZHALTER: Datum]</span></span><span><span class="ph">[PLATZHALTER: Event / Turnier – Kurzinfo, Anmeldung]</span></span></li>
+        </ul>
       </div>
     </section>
 
-    <!-- ================= ABSCHLUSS-CTA ================= -->
-    <section class="cta-band" aria-labelledby="cta-title">
-      <div class="container reveal">
-        <h2 id="cta-title">Euer Event auf dem Padel-Court</h2>
-        <p><span class="tag-muster">[MUSTERTEXT]</span>Erzählt uns kurz, was ihr plant – wir melden uns mit einem Vorschlag. Oder bucht direkt einen Platz.</p>
-        <div class="btn-row">
-          <a class="btn btn--book" href="buchen.html">Jetzt Platz buchen</a>
-          <a class="btn btn--outline" href="kontakt.html">Fragen? Kontakt</a>
+    <!-- ===== ABSCHLUSS ===== -->
+    <section class="closer" aria-labelledby="closer-title">
+      <div class="closer__lines" aria-hidden="true"></div>
+      <div class="wrap">
+        <h2 id="closer-title">Was habt ihr vor?</h2>
+        <p><span class="muster">MUSTERTEXT</span>Schreibt uns kurz, wie viele ihr seid und wann – wir melden uns mit einem Vorschlag.</p>
+        <div class="actions">
+          <a class="btn btn--book" href="buchen.html">Platz buchen</a>
+          <a class="btn btn--line" href="kontakt.html">Erst mal anrufen</a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ================= FOOTER (auf allen Seiten identisch) ================= -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a class="logo" href="index.html">
-            <span class="logo-mark" aria-hidden="true">LOGO</span>
-            <span>[PLATZHALTER: Name]<small>Padel · Eckernförde</small></span>
-          </a>
-          <p style="margin-top:1rem">Padel an der Eckernförder Bucht – für Einsteiger, Freizeitgruppen und alle, die Lust auf Bewegung haben.</p>
-        </div>
-        <div>
-          <h2>Seiten</h2>
+  <!-- ===== FOOTER (auf allen Seiten identisch) ===== -->
+  <footer class="footer">
+    <div class="wrap">
+      <p class="footer__big">Bis gleich auf dem Platz.</p>
+      <div class="footer__row">
+        <address>
+          <strong style="color:#fff">[PLATZHALTER: Unternehmensname]</strong><br>
+          [PLATZHALTER: Straße Nr.]<br>
+          [PLATZHALTER: PLZ] Eckernförde<br>
+          <a href="tel:+490000000000">[PLATZHALTER: Telefon]</a><br>
+          <a href="mailto:info@example.com">[PLATZHALTER: E-Mail]</a>
+        </address>
+        <nav aria-label="Footer">
           <ul>
             <li><a href="padel.html">Was ist Padel?</a></li>
             <li><a href="platz.html">Der Platz</a></li>
-            <li><a href="preise.html">Preise &amp; Öffnungszeiten</a></li>
-            <li><a href="angebote.html">Angebote &amp; Events</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-          </ul>
-        </div>
-        <div>
-          <h2>Kontakt</h2>
-          <ul>
-            <li>[PLATZHALTER: Straße Nr.]</li>
-            <li>[PLATZHALTER: PLZ] Eckernförde</li>
-            <li><a href="tel:+490000000000">[PLATZHALTER: Telefon]</a></li>
-            <li><a href="mailto:info@example.com">[PLATZHALTER: E-Mail]</a></li>
-          </ul>
-        </div>
-        <div>
-          <h2>Buchen</h2>
-          <ul>
-            <li><a href="buchen.html">Platz online buchen</a></li>
-            <li><a href="angebote.html#gruppen">Gruppen- &amp; Firmenanfrage</a></li>
+            <li><a href="preise.html">Preise &amp; Zeiten</a></li>
+            <li><a href="angebote.html">Gruppen &amp; Events</a></li>
+            <li><a href="faq.html">Fragen</a></li>
             <li><a href="kontakt.html">Anfahrt</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p style="margin-bottom:.8rem">Freie Zeiten, Schläger, Gruppen: alles über die Buchung.</p>
+          <a class="btn btn--book btn--small" href="buchen.html">Platz buchen</a>
+          <ul style="margin-top:1rem">
+            <li><a href="#">Instagram [PLATZHALTER]</a></li>
+            <li><a href="#">Facebook [PLATZHALTER]</a></li>
           </ul>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="footer__legal">
         <span>© <span data-year>2026</span> [PLATZHALTER: Unternehmensname]</span>
-        <span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
+        <span><a href="impressum.html">Impressum</a> &nbsp; <a href="datenschutz.html">Datenschutz</a></span>
       </div>
     </div>
   </footer>
 
-  <!-- Fixierte Buchungsleiste (nur Smartphone) -->
-  <div class="mobile-book-bar">
-    <a class="btn btn--book" href="buchen.html">Jetzt Platz buchen</a>
+  <!-- Buchungsleiste fürs Smartphone -->
+  <div class="bookbar">
+    <a class="btn btn--book" href="buchen.html">Platz buchen</a>
+    <a class="call" href="tel:+490000000000" aria-label="Anrufen ([PLATZHALTER: Telefon])"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></a>
   </div>
 
   <script src="js/main.js" defer></script>
